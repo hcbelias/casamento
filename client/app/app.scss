@@ -1,0 +1,31 @@
+$fa-font-path: "../bower_components/font-awesome/fonts";
+@import '../bower_components/font-awesome/scss/font-awesome';
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #EBE2D1;
+  color           : #19245B;
+
+  .main-container {
+    padding: 50px 80px;
+    top: -150px;
+  }
+}
+
+
+@font-face {
+  font-family: 'Powerpoint';
+  src        : url('/assets/fonts/powerpoint_roxo.eot');
+  src        : url('/assets/fonts/powerpoint_roxo.eot?#iefix') format('embedded-opentype'),url('/assets/fonts/powerpoint_roxo.woff') format('woff'),url('/assets/fonts/powerpoint_roxo..ttf') format('truetype');
+}
+
+// Component styles are injected through grunt
+/* inject:scss */
+@import 'main/main';
+@import '../components/footer/footer';
+@import '../components/header/header';
+/* endinject */
