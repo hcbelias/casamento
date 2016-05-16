@@ -14,6 +14,16 @@ body {
     padding: 50px 80px;
     top: -150px;
   }
+  .border-container{
+      .middle-border{
+        max-width: 490px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        display: block;
+      }
+  }
+
 
   nav{
     box-shadow: none;
