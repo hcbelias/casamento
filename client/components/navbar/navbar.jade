@@ -1,14 +1,34 @@
-div.navbar.navbar-default.navbar-static-top(ng-controller='NavbarController')
-  div.container
-    div.navbar-header
-      button.navbar-toggle(type='button', ng-click='nav.isCollapsed = !nav.isCollapsed')
-        span.sr-only Toggle navigation
-        span.icon-bar
-        span.icon-bar
-        span.icon-bar
-      a.navbar-brand(href='/') casamento
-
-    div#navbar-main.navbar-collapse.collapse(uib-collapse='nav.isCollapsed')
-      ul.nav.navbar-nav
-        li(ng-repeat='item in nav.menu', ui-sref-active='active')
-          a(ui-sref='{{item.state}}') {{item.title}}
+nav
+  .nav-wrapper.container
+    a.button-collapse(href='#', data-activates='mobile-demo')
+      i.material-icons menu
+    ul.right.hide-on-med-and-down.z-depth-1
+      li
+        a(href='sass.html') Os noivos
+      li
+        a(href='badges.html') Padrinhos
+      li
+        a(href='collapsible.html') Local
+      li
+        a(href='mobile.html') Cerimônia
+      li
+        a(href='mobile.html') Confirme sua presença
+      li
+        a(href='mobile.html') Lista de presentes
+      li
+        a(href='mobile.html') Dúvidas
+    ul#mobile-demo.side-nav
+      li
+        a(href='sass.html') Os noivos
+      li
+        a(href='badges.html') Padrinhos
+      li
+        a(href='collapsible.html') Local
+      li
+        a(href='mobile.html') Cerimônia
+      li
+        a(href='mobile.html') Confirme sua presença
+      li
+        a(href='mobile.html') Lista de presentes
+      li
+        a(href='mobile.html') Dúvidas
