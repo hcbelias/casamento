@@ -15,12 +15,22 @@ body {
     top: -150px;
   }
   .border-container{
+      margin: 100px 100px 0px 100px;
+
       .middle-border{
         max-width: 490px;
         margin-left: auto;
         margin-right: auto;
         width: 100%;
         display: block;
+        &.bottom-border{
+            position: relative;
+            bottom: -180px;
+        }
+      }
+
+      .right-border{
+        float: right;
       }
   }
 
