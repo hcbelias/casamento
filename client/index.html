@@ -26,10 +26,16 @@
     <!--[if lt IE 7]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+  <div class="sdn-topo">
+    <div class="noivos">
+      <span>Emília</span>
+      <span><img src="/assets/images/heart.png"></img></span>
+      <span>Henrique</span>
+      <p class="date">13 de Agosto de 2016</p>
+    </div>
+  </div>
 
-    <!-- Add your site or application content here -->
-    <header></header>
-    <div class="row border-container top">
+	<div class="row border-container top">
       <div class="col s12 l1">
         <img class="hide-on-med-and-down" src="/assets/images/left-top-border.png"/>
       </div>
@@ -40,12 +46,10 @@
         <img class="hide-on-med-and-down right-border" src="/assets/images/right-top-border.png"/>
       </div>
     </div>
-
+    <!-- Add your site or application content here -->
     <navbar></navbar>
-    <div class="main-container row " ui-view="">
-    </div>
-
-    <div class="row border-container bottom ">
+    <div class="main-container row" ui-view=""></div>
+	    <div class="row border-container bottom ">
       <div class="col s12 l1">
         <img class="hide-on-med-and-down" src="/assets/images/left-bottom-border.png"/>
       </div>
@@ -56,8 +60,6 @@
         <img class="hide-on-med-and-down right-border" src="/assets/images/right-bottom-border.png"/>
       </div>
     </div>
-
-
     <footer></footer>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -95,7 +97,6 @@
       <script src="app/main/main.controller.js"></script>
       <script src="app/main/main.js"></script>
       <script src="components/footer/footer.directive.js"></script>
-      <script src="components/header/header.directive.js"></script>
       <script src="components/navbar/navbar.controller.js"></script>
       <script src="components/navbar/navbar.directive.js"></script>
       <script src="components/util/util.service.js"></script>

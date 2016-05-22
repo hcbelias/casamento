@@ -48,7 +48,7 @@ export default function(app) {
    * Lusca - express server security
    * https://github.com/krakenjs/lusca
    */
-  if (env !== 'test' && !process.env.SAUCE_USERNAME) {
+  if ('test' !== env) {
     app.use(lusca({
       csrf: {
         angular: true
