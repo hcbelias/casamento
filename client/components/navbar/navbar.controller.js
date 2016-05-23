@@ -1,8 +1,11 @@
 'use strict';
 
-class NavbarController {}
+class NavbarController {
+  constructor() {
+    jQuery('ul.tabs').tabs();
+  }
+}
 
-//end-non-standard
 
 angular.module('casamentoApp')
   .controller('NavbarController', NavbarController);

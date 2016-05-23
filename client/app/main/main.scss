@@ -1,0 +1,10 @@
+@import '../bower_components/materialize/sass/materialize';
+
+
+
+@media #{$large-and-up} {
+  main{
+    top: -150px;
+    position: relative;
+  }
+}

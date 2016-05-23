@@ -13,7 +13,7 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(client) app/vendor.css -->
       <!-- bower:css -->
-      <link rel="stylesheet" href="bower_components/Materialize/bin/materialize.css" />
+      <link rel="stylesheet" href="bower_components/materialize/bin/materialize.css" />
       <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css({.tmp,client}) app/app.css -->
@@ -26,14 +26,16 @@
     <!--[if lt IE 7]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-  <div class="sdn-topo">
-    <div class="noivos">
+  <div class="header-title-container">
+    <div class="header-title">
       <span>Emília</span>
       <span><img src="/assets/images/heart.png"></img></span>
       <span>Henrique</span>
       <p class="date">13 de Agosto de 2016</p>
     </div>
   </div>
+
+  <navbar></navbar>
 
 	<div class="row border-container top">
       <div class="col s12 l1">
@@ -47,9 +49,11 @@
       </div>
     </div>
     <!-- Add your site or application content here -->
-    <navbar></navbar>
+
     <div class="main-container row" ui-view=""></div>
-	    <div class="row border-container bottom ">
+
+
+	  <div class="row border-container bottom ">
       <div class="col s12 l1">
         <img class="hide-on-med-and-down" src="/assets/images/left-bottom-border.png"/>
       </div>
@@ -86,7 +90,8 @@
       <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
       <script src="bower_components/lodash/dist/lodash.compat.js"></script>
       <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-      <script src="bower_components/Materialize/bin/materialize.js"></script>
+      <script src="bower_components/materialize/bin/materialize.js"></script>
+      <script src="bower_components/angular-materialize/src/angular-materialize.js"></script>
       <!-- endbower -->
     <!-- endbuild -->
     <!-- build:js(.tmp) app/app.js -->

@@ -7,20 +7,21 @@ body {
 }
 
 body {
-  background-color: #EBE2D1;
+  background-color: white;// #EBE2D1;
   color           : #19245B;
 
-  .sdn-topo {
+  .header-title-container {
     color      : rgb(78, 79, 111);
     font-family: 'Open Sans', sans-serif;
     text-align : center;
     font-size: 25px;
-    .noivos {
+    padding-bottom: 160px;
+    .header-title {
       font-family: 'Powerpoint', cursive;
       font-size  : 100px;
+      padding-top: 100px;
       height     : 110px;
-      line-height: 37.7px;
-      margin     : 80px 0 35px;
+      line-height: 60px;
       text-align : center;
       .date{
         font-size: 30px;
@@ -35,7 +36,6 @@ body {
     top: -150px;
   }
   .border-container{
-      margin: 100px 100px 0px 100px;
 
       .middle-border{
         max-width: 490px;
@@ -47,10 +47,15 @@ body {
             position: relative;
             bottom: -180px;
         }
+
       }
 
       .right-border{
         float: right;
+      }
+
+      &.top{
+          margin-top: 50px;
       }
   }
 
@@ -79,4 +84,5 @@ body {
 /* inject:scss */
 @import 'main/main';
 @import '../components/footer/footer';
+@import '../components/navbar/navbar';
 /* endinject */

@@ -1,7 +1,10 @@
+@import '../bower_components/materialize/sass/materialize';
+
 footer {
   text-align: center;
   padding: 20px 0;
   background-color: #DFB967;
+  margin-top: 50px;
   .title{
     font-size: 30px;
   }
@@ -11,3 +14,10 @@ footer {
     color: #19245B;
   }
 }
+
+@media #{$medium-and-down} {
+   // styles for medium screens and down
+   footer {
+     margin-top: 200px;
+   }
+ }
