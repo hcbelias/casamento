@@ -1,4 +1,26 @@
 .tabs-container{
-  margin-right: 100px;
-  margin-left: 100px;
+  background-color: transparent;
+  .tabs{
+    background-color: transparent;
+    a{
+      background-color: #EBE2D1;
+      &:hover{
+        background-color: rgba(255, 255, 255, 0.20);
+      }
+    }
+  }
+  margin-right: auto;
+  margin-left: auto;
+}
+
+nav{
+  box-shadow: none;
+  background-color: transparent;
+  ul{
+    background-color: #DFB967;
+    padding: 10px;
+    a{
+      color: #4e4f6f;
+    }
+  }
 }

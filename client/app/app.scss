@@ -1,5 +1,6 @@
 $fa-font-path: "../bower_components/font-awesome/fonts";
 @import '../bower_components/font-awesome/scss/font-awesome';
+@import '../bower_components/materialize/sass/materialize';
 
 html,
 body {
@@ -7,7 +8,7 @@ body {
 }
 
 body {
-  background-color: white;// #EBE2D1;
+  background-color: #EBE2D1;
   color           : #19245B;
 
   .header-title-container {
@@ -25,15 +26,20 @@ body {
       text-align : center;
       .date{
         font-size: 30px;
-        margin: 50px;
       }
     }
   }
 
 
   .main-container {
-    padding: 50px 80px;
     top: -150px;
+    .main-title{
+      font-family: 'Powerpoint', cursive;
+      font-size: 50px;
+      height: 110px;
+      line-height: 60px;
+      text-align: center;
+    }
   }
   .border-container{
 
@@ -54,24 +60,23 @@ body {
         float: right;
       }
 
-      &.top{
+      &.top-container{
           margin-top: 50px;
       }
-  }
 
-
-  nav{
-    box-shadow: none;
-    background-color: transparent;
-    ul{
-      background-color: #DFB967;
-      padding: 10px;
-      a{
-        color: #4e4f6f;
+      &.bottom-container{
+          margin-top:-150px;
       }
-    }
+
+      @media #{$large-and-up} {
+        &.bottom-container{
+            margin-top:-300px;
+        }
+      }
   }
 }
+
+
 
 
 @font-face {

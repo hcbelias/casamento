@@ -1,10 +1,15 @@
 @import '../bower_components/materialize/sass/materialize';
 
-
+main{
+  font-size: large;
+  font-weight: 300;
+}
 
 @media #{$large-and-up} {
   main{
     top: -150px;
+    font-size: 20px;
     position: relative;
   }
+
 }
