@@ -3,8 +3,8 @@
 class NavbarController {
   constructor() {
     jQuery('ul.tabs').tabs();
-    jQuery(".button-collapse").sideNav();
-    
+    jQuery('.button-collapse').sideNav();
+    this.numberOfRemainingDays = this.daydiff();
   }
 
   daydiff() {
