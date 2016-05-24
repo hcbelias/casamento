@@ -1,0 +1,24 @@
+@import '../bower_components/materialize/sass/materialize';
+
+people{
+  .card.small{
+    .card-image{
+      max-height: 70%;
+      height: 70%;
+    }
+  }
+
+  .people-container{
+    width: 100%;
+    margin: auto;
+  }
+}
+
+@media #{$large-and-up} {
+  people{
+    .people-container{
+      width: 50%;
+    }
+  }
+
+}
