@@ -33,12 +33,20 @@ body {
 
   .main-container {
     top: -150px;
+    position: relative;
+    min-height: 50px;
+    font-size: 20px;
+    font-weight: 300;
     .main-title{
       font-family: 'Powerpoint', cursive;
       font-size: 50px;
       height: 110px;
       line-height: 60px;
       text-align: center;
+    }
+
+    @media #{$medium-and-down} {
+      top: 0px;
     }
   }
   .border-container{
@@ -66,6 +74,8 @@ body {
 
       &.bottom-container{
           margin-top:-150px;
+          float: left;
+          width: 100%;
       }
 
       @media #{$large-and-up} {
@@ -88,6 +98,8 @@ body {
 // Component styles are injected through grunt
 /* inject:scss */
 @import 'main/main';
+@import 'people/people';
+@import 'place/place';
 @import '../components/footer/footer';
 @import '../components/navbar/navbar';
 /* endinject */

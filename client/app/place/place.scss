@@ -1,0 +1,28 @@
+@import '../bower_components/materialize/sass/materialize';
+place{
+  .card{
+    .card-content{
+      .info{
+          padding: 10px;
+      }
+      p{
+        font-weight: 700;
+        font-size: 15px;
+      }
+    }
+    .card-reference{
+      padding: 20px;
+      min-height: 210px;
+    }
+  }
+}
+
+@media #{$medium-and-down} {
+  place{
+    .card{
+      .card-reference{
+        min-height: 280px;
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+'use strict';
+
+describe('Component: peopleComponent', function() {
+
+  // load the controller's module
+  beforeEach(module('casamentoApp'));
+  beforeEach(module('stateMock'));
+
+  var scope;
+  var peopleComponent;
+  var state;
+  var $httpBackend;
+
+  // Initialize the controller and a mock scope
+  beforeEach(inject(function(
+    _$httpBackend_,
+    $http,
+    $componentController,
+    $rootScope,
+    $state) {
+      $httpBackend = _$httpBackend_;
+      $httpBackend.expectGET('/api/things')
+        .respond(['HTML5 Boilerplate', 'AngularJS', 'Karma', 'Express']);
+
+      scope = $rootScope.$new();
+      state = $state;
+      peopleComponent = $componentController('people', {
+        $http: $http,
+        $scope: scope
+      });
+  }));
+
+  it('should attach a list of things to the controller', function() {
+    peopleComponent.$onInit();
+    $httpBackend.flush();
+    expect(peopleComponent.awesomeThings.length).toBe(4);
+  });
+});

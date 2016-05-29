@@ -1,3 +1,26 @@
+nav
+  .nav-wrapper.container
+    a.brand-logo(href='#!')
+      img(src='/assets/images/heart.png')
+    a.button-collapse.waves-effect.waves-light(href='#', data-activates='mobile-demo')
+      i.material-icons menu
+    ul.right.hide-on-med-and-down
+      li
+        div Faltam {{numberOfRemainingDays}} dias para o casamento.
+    ul#mobile-demo.side-nav
+      li
+        a(ui-sref="main") Home
+      li.tab
+        a(ui-sref="people") Noivos e Padrinhos
+      li.tab
+        a(ui-sref="place") O Lugar
+      li.tab
+        a(href='mobile.html') Confirme Sua Presença
+      li.tab
+        a(href='#test4') Lista de Presentes
+      li.tab
+        a(href='#test4') Dúvidas
+
 .header-title-container
   .header-title
     span Emília
@@ -6,17 +29,16 @@
     span Henrique
     p.date 13 de Agosto de 2016
 
-.container.hide-on-med-and-down.tabs-container
-  ul.tabs
-    li.tab.col.s2
-      a.active(href='#test1') Home
-    li.tab.col.s2
-      a(href='#test2') Padrinhos
-    li.tab.col.s2
-      a(href='#test4') Local
-    li.tab.col.s2
-      a(href='#test4') Confirme sua Presença
-    li.tab.col.s2
-      a(href='#test4') Lista de Presentes
-    li.tab.col.s2
-      a(href='#test4') Dúvidas
+ul.hide-on-med-and-down.tabs.menu.container
+  li.tab
+    a(ui-sref="main") Home
+  li.tab
+    a(ui-sref="people") Noivos e Padrinhos
+  li.tab
+    a(ui-sref="place") O Lugar
+  li.tab
+    a(href='mobile.html') Confirme Sua Presença
+  li.tab
+    a(href='#test4') Lista de Presentes
+  li.tab
+    a(href='#test4') Dúvidas

@@ -1,26 +1,26 @@
-.tabs-container{
-  background-color: transparent;
-  .tabs{
-    background-color: transparent;
-    a{
-      background-color: #EBE2D1;
-      &:hover{
-        background-color: rgba(255, 255, 255, 0.20);
-      }
+nav{
+  background-color: #DFB967;
+  ul{
+    div {
+      font-size: 20px;
+      font-family: 'Powerpoint', cursive;
+      color: #19245B;
     }
+    a{
+      color: #19245B;
+    }
+
   }
-  margin-right: auto;
-  margin-left: auto;
 }
 
-nav{
-  box-shadow: none;
+.tabs.menu{
   background-color: transparent;
-  ul{
-    background-color: #DFB967;
-    padding: 10px;
+  li.tab{
     a{
-      color: #4e4f6f;
+      color: #F3616A;
+      &:hover{
+        background-color: rgba(255, 255, 255, 0.2);
+      }
     }
   }
 }
