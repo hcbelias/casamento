@@ -1,0 +1,11 @@
+@import '../bower_components/materialize/sass/materialize';
+rsvp{
+  a.btn{
+    float: right;
+  }
+  @media #{$medium-and-down} {
+    .checkbox{
+      float: right;
+    }
+  }
+}
