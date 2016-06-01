@@ -15,6 +15,5 @@ class NavbarController {
 
 }
 
-
 angular.module('casamentoApp')
   .controller('NavbarController', NavbarController);
