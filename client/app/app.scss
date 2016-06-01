@@ -98,6 +98,7 @@ body {
 // Component styles are injected through grunt
 /* inject:scss */
 @import 'main/main';
+@import 'people-card/people-card';
 @import 'people/people';
 @import 'place/place';
 @import 'questions/questions';

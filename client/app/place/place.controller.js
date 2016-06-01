@@ -4,9 +4,10 @@
 
 class PlaceController {
 
-  constructor() {
-
+  openLink(link){
+    window.open(link, '_blank');
   }
+
 
 
 }

@@ -1,7 +1,36 @@
 @import '../bower_components/materialize/sass/materialize';
 rsvp{
-  a.btn{
+
+  form{
+    /* label focus color */
+    .input-field input[type=text]:focus + label,
+    .input-field input[type=tel]:focus + label,
+    .input-field input[type=email]:focus + label {
+      color: #19245B;
+    }
+    /* label underline focus color */
+    .input-field input[type=text]:focus,
+    .input-field input[type=tel]:focus,
+    .input-field input[type=email]:focus {
+      border-bottom: 1px solid #19245B;
+      box-shadow: 0 1px 0 0 #19245B;
+    }
+
+    /* icon prefix focus color */
+    .input-field .prefix.active {
+      color: #19245B;
+    }
+
+  }
+
+  a.my-btn{
     float: right;
+    background-color: #EBE2D1;
+    color: #19245B;
+    &:hover,
+    &:focus{
+      background-color: #DFB967;
+    }
   }
   @media #{$medium-and-down} {
     .checkbox{

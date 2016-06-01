@@ -4,8 +4,11 @@
 
 class MainController {
 
-  constructor() {
+  constructor($window) {
+    this.window = $window;
+  }
 
+  $onInit() {
   }
 
 

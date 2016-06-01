@@ -25,13 +25,11 @@ div.container#rsvp
                   input#icon_email.validate(type='email', ng-model='email', required)
                   label(for='icon_email', data-error='wrong',data-success='right') E-mail
                 .input-field.col.s12.l6
-                  p.checkbox
-                    input#rsvp(type='checkbox', ng-model='rsvp')
-                    label(for='rsvp') Confirmo minha presença
+                  p.checkbox(ng-init='attend=true')
+                    input#attend(type='checkbox', ng-model='attend')
+                    label(for='attend') Confirmo minha presença
               .row
                 .input-field.col.s12
-                    a.waves-effect.waves-light.btn-large.btn
+                    a.waves-effect.waves-light.btn-large.my-btn
                       i.material-icons.right email
-                      | Enviar
-
- 
+                      | Enviar                    

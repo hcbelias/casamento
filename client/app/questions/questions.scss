@@ -1,4 +1,13 @@
 @import '../bower_components/materialize/sass/materialize';
 questions{
-
+  label{
+    color: #19245B;
+    font-size: 20px;
+  }
+  .contact-box{
+    .material-icons{
+      top: 5px;
+      position: relative;
+    }
+  }
 }

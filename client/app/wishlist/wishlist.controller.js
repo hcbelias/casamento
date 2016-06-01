@@ -4,8 +4,8 @@
 
 class WishlistController {
 
-  constructor() {
-    this.rsvp = true;
+  openLink(link){
+    window.open(link, '_blank');
   }
 
 

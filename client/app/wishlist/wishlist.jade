@@ -1,37 +1,18 @@
 div.container#wishlist
   h3.main-title Lista de Presentes
-  p.lead Para podermos nos organizar melhor, é importante a confirmação de sua presença.
+  p.lead Estamos disponibilizando nossa lista de casamento nas lojas Camicado e La Ville. Clique nos links abaixo para abrir a lista de casamento.
   br
   div.row
-    .container
-      .card
-        .card-image
-          img(src='assets/images/pousada_021.jpg')
-        .card-content
-          .row
-            form.col.s12
-              .row
-                .input-field.col.s12.l6
-                  i.material-icons.prefix account_circle
-                  input#icon_prefix.validate(type='text', ng-model='name', pattern='.{3,}', required)
-                  label(for='icon_prefix', data-error='wrong',data-success='right') Nome Completo
-                .input-field.col.s12.l6
-                  i.material-icons.prefix phone
-                  input#icon_telephone.validate(type='tel', ng-model='phone', pattern='.{8,}', required)
-                  label(for='icon_telephone', data-error='wrong',data-success='right') Telefone 
-              .row                  
-                .input-field.col.s12.l6
-                  i.material-icons.prefix mail
-                  input#icon_email.validate(type='email', ng-model='email', required)
-                  label(for='icon_email', data-error='wrong',data-success='right') E-mail
-                .input-field.col.s12.l6
-                  p.checkbox
-                    input#rsvp(type='checkbox', ng-model='rsvp')
-                    label(for='rsvp') Confirmo minha presença
-              .row
-                .input-field.col.s12
-                    a.waves-effect.waves-light.btn-large.btn
-                      i.material-icons.right email
-                      | Enviar
-
- 
+    div.people-container
+      div.s12.m3.col.offset-m2
+        .card.hoverable(ng-click="$ctrl.openLink('https://www.lavillecasa.com.br/itens_lista.jsp?lista=A13817')")
+          .card-image.waves-effect.waves-block.waves-light
+            img.responsive-img(src="assets/images/laville.png")
+          .card-action
+            a(href="https://www.lavillecasa.com.br/itens_lista.jsp?lista=A13817" target="_blank") Lista de Casamento na La Ville
+      div.s12.m3.col.offset-m2
+        .card.hoverable(ng-click="$ctrl.openLink('http://www.camicado.com.br/weddinglist/products/60309617')")
+          .card-image.waves-effect.waves-block.waves-light
+            img.responsive-img(src="assets/images/camicado.png")
+          .card-action
+            a(href="http://www.camicado.com.br/weddinglist/products/60309617" target="_blank") Lista de Casamento na Camicado

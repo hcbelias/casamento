@@ -9,9 +9,12 @@ nav
         div Faltam {{numberOfRemainingDays}} dias para o casamento.
     ul#mobile-demo.side-nav
       li
+        span.side-nav-header
+          img(src='/assets/images/heart.png')
+          | Faltam {{numberOfRemainingDays}} dias
         a(ui-sref="main") Home
       li.tab
-        a(ui-sref="people") Noivos e Padrinhos
+        a(ui-sref="people") Padrinhos
       li.tab
         a(ui-sref="place") O Lugar
       li.tab
@@ -33,7 +36,7 @@ ul.hide-on-med-and-down.tabs.menu.container
   li.tab
     a(ui-sref="main") Home
   li.tab
-    a(ui-sref="people") Noivos e Padrinhos
+    a(ui-sref="people") Padrinhos
   li.tab
     a(ui-sref="place") O Lugar
   li.tab

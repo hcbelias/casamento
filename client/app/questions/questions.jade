@@ -1,37 +1,15 @@
 div.container#questions
-  h3.main-title Dúvidas
-  p.lead Para podermos nos organizar melhor, é importante a confirmação de sua presença.
-  br
+  h3.main-title Dúvidas  
+  p.lead Em caso de dúvida, entre em contato conosco.            
   div.row
     .container
       .card
-        .card-image
-          img(src='assets/images/pousada_021.jpg')
-        .card-content
+        .card-content 
           .row
-            form.col.s12
-              .row
-                .input-field.col.s12.l6
-                  i.material-icons.prefix account_circle
-                  input#icon_prefix.validate(type='text', ng-model='name', pattern='.{3,}', required)
-                  label(for='icon_prefix', data-error='wrong',data-success='right') Nome Completo
-                .input-field.col.s12.l6
-                  i.material-icons.prefix phone
-                  input#icon_telephone.validate(type='tel', ng-model='phone', pattern='.{8,}', required)
-                  label(for='icon_telephone', data-error='wrong',data-success='right') Telefone 
-              .row                  
-                .input-field.col.s12.l6
-                  i.material-icons.prefix mail
-                  input#icon_email.validate(type='email', ng-model='email', required)
-                  label(for='icon_email', data-error='wrong',data-success='right') E-mail
-                .input-field.col.s12.l6
-                  p.checkbox
-                    input#rsvp(type='checkbox', ng-model='rsvp')
-                    label(for='rsvp') Confirmo minha presença
-              .row
-                .input-field.col.s12
-                    a.waves-effect.waves-light.btn-large.btn
-                      i.material-icons.right email
-                      | Enviar
-
- 
+            div
+              label(for='icon_email', data-error='wrong',data-success='right') Aplauso Cerimonial
+              p.contact-box 
+               i.material-icons.prefix.s12.m6 mail 
+               | rsvp@aplausocerimonial.com.br
+              
+        

@@ -5,7 +5,6 @@
 class RSVPController {
 
   constructor() {
-    this.rsvp = true;
   }
 
 
