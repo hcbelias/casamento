@@ -1,6 +1,9 @@
 @import '../bower_components/materialize/sass/materialize';
 rsvp{
-
+  .card-form{
+    max-width: 600px;
+    margin: auto;
+  }
   form{
     /* label focus color */
     .input-field input[type=text]:focus + label,

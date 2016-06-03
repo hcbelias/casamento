@@ -4,34 +4,36 @@ div.container#rsvp
       h3.main-title Confirme sua Presença
       p.lead Para podermos nos organizar melhor, é importante a confirmação de sua presença.
       br
-      div.row
-        .container
-          .card
-            .card-image
-              img(src='assets/images/pousada_021.jpg')
-            .card-content
-              .row
-                form.col.s12
-                  .row
-                    .input-field.col.s12.l6
-                      i.material-icons.prefix account_circle
-                      input#icon_prefix.validate(type='text', ng-model='name', pattern='.{3,}', required)
-                      label(for='icon_prefix', data-error='wrong',data-success='right') Nome Completo
-                    .input-field.col.s12.l6
-                      i.material-icons.prefix phone
-                      input#icon_telephone.validate(type='tel', ng-model='phone', pattern='.{8,}', required)
-                      label(for='icon_telephone', data-error='wrong',data-success='right') Telefone 
-                  .row                  
-                    .input-field.col.s12.l6
-                      i.material-icons.prefix mail
-                      input#icon_email.validate(type='email', ng-model='email', required)
-                      label(for='icon_email', data-error='wrong',data-success='right') E-mail
-                    .input-field.col.s12.l6
-                      p.checkbox(ng-init='attend=true')
-                        input#attend(type='checkbox', ng-model='attend')
-                        label(for='attend') Confirmo minha presença
-                  .row
-                    .input-field.col.s12
-                        a.waves-effect.waves-light.btn-large.my-btn
-                          i.material-icons.right email
-                          | Enviar                    
+
+  .card-content
+    .card.hoverable
+      .card-image
+        img(src='assets/images/pousada_021.jpg').full-width
+        span.card-title Confirmação de Presença
+      .card-content.card-form
+        .row
+          form.col.s12
+            .row
+              .input-field.col.s12
+                i.material-icons.prefix account_circle
+                input#icon_prefix.validate(type='text', ng-model='name', pattern='.{3,}', required)
+                label(for='icon_prefix', data-error='wrong',data-success='right') Nome Completo
+            .row
+              .input-field.col.s12
+                i.material-icons.prefix mail
+                input#icon_email.validate(type='email', ng-model='email', required)
+                label(for='icon_email', data-error='wrong',data-success='right') E-mail
+            .row
+              .input-field.col.s12.l6
+                i.material-icons.prefix phone
+                input#icon_telephone.validate(type='tel', ng-model='phone', pattern='.{8,}', required)
+                label(for='icon_telephone', data-error='wrong',data-success='right') Telefone                        
+              .input-field.col.s12.l6
+                p.checkbox(ng-init='attend=true')
+                  input#attend(type='checkbox', ng-model='attend')
+                  label(for='attend') Confirmo minha presença
+            .row
+              .input-field.col.s12
+                  a.waves-effect.waves-light.btn-large.my-btn
+                    i.material-icons.right email
+                    | Enviar                    

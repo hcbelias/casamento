@@ -47,6 +47,13 @@ body {
 
     @media #{$medium-and-down} {
       top: 0px;
+
+    }
+    @media #{$small-and-down} {
+      .second-title {
+        height: 175px;
+      }
+
     }
   }
   .border-container{
