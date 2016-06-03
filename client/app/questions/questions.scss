@@ -1,5 +1,5 @@
 @import '../bower_components/materialize/sass/materialize';
-questions{
+#questions{
   label{
     color: #19245B;
     font-size: 20px;
@@ -8,6 +8,13 @@ questions{
     .material-icons{
       top: 5px;
       position: relative;
+    }
+  }
+
+  .link-saritur{
+    color: #ffab40;
+    &:hover{
+      color: #ffd8a6;
     }
   }
 }

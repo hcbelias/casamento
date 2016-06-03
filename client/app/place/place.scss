@@ -1,6 +1,11 @@
 @import '../bower_components/materialize/sass/materialize';
-place{
+#place{
+  .card-map{
+    max-width: 600px;
+    margin: auto;
+  }
   .card{
+
     .card-content{
       .info{
           padding: 10px;
@@ -10,7 +15,7 @@ place{
         font-size: 15px;
       }
     }
-    
+
     .card-reference{
       width: 250px;
     }

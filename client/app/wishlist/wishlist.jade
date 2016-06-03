@@ -1,18 +1,20 @@
 div.container#wishlist
-  h3.main-title Lista de Presentes
-  p.lead Estamos disponibilizando nossa lista de casamento nas lojas Camicado e La Ville. Clique nos links abaixo para abrir a lista de casamento.
-  br
+  .card
+    .card-content
+      h3.main-title Lista de Presentes
+      p.lead Estamos disponibilizando nossa lista de casamento nas lojas Camicado e La Ville. Clique nos links abaixo para abrir a lista de casamento.
+  
   div.row
     div.people-container
-      div.s12.m3.col.offset-m2
+      div.s12.m6.col
         .card.hoverable(ng-click="$ctrl.openLink('https://www.lavillecasa.com.br/itens_lista.jsp?lista=A13817')")
-          .card-image.waves-effect.waves-block.waves-light
+          .waves-effect.waves-block.waves-light.valign
             img.responsive-img(src="assets/images/laville.png")
           .card-action
             a(href="https://www.lavillecasa.com.br/itens_lista.jsp?lista=A13817" target="_blank") Lista de Casamento na La Ville
-      div.s12.m3.col.offset-m2
+      div.s12.m6.col
         .card.hoverable(ng-click="$ctrl.openLink('http://www.camicado.com.br/weddinglist/products/60309617')")
-          .card-image.waves-effect.waves-block.waves-light
+          .waves-effect.waves-block.waves-light.camicado.valign
             img.responsive-img(src="assets/images/camicado.png")
           .card-action
             a(href="http://www.camicado.com.br/weddinglist/products/60309617" target="_blank") Lista de Casamento na Camicado

@@ -1,65 +1,60 @@
 div.container#place
-  h3.main-title O Lugar
-  p.lead Iremos celebrar o nosso casamento entre os dias 12 e 15 de Agosto de 2016.
-
-  p.lead Convidamos para a confraternização no dia  12 de Agosto de 2016, na pousada Rancho Cipó, Serra do Cipó.
-
-  p.lead A cerimônia de casamento será realizada em 13 de Agosto de 2016, às 16 horas.
-  div.row
-    .col.s12
-      .card.hoverable
-        .card-image(ng-click="$ctrl.openLink('http://ranchocipo.com.br/pousada')")
-          img(src='assets/images/estrada.jpg').full-width
-          span.card-title Pousada Rancho Cipó
-        .card-content
-          p.video-container            
-            iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.079045178507!2d-43.61376904933733!3d-19.322375986882985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa5f03b2e5dfc17%3A0xf6f40a8bcf067eca!2sRancho+Cip%C3%B3+Pousada!5e0!3m2!1sen!2sbr!4v1464062267007', width='400', height='450', frameborder='0', style='border:0', allowfullscreen='')            
-        .card-action(ng-click="$ctrl.openLink('http://ranchocipo.com.br/pousada')")
-          a(href="http://ranchocipo.com.br/pousada/" target="_blank") Site da pousada do Rancho Cipó.
+  .card
+    .card-content
+      h3.main-title O Lugar
+      span Iremos celebrar o nosso casamento entre os dias 12 e 15 de Agosto de 2016.
+      span Convidamos para a confraternização no dia  12 de Agosto de 2016, na pousada Rancho Cipó, Serra do Cipó. 
+      span A cerimônia de casamento será realizada em 13 de Agosto de 2016, às 16 horas.  
+  .card-content
+    .card.hoverable
+      .card-image(ng-click="$ctrl.openLink('http://ranchocipo.com.br/pousada')")
+        img(src='assets/images/estrada.jpg').full-width
+        span.card-title Pousada Rancho Cipó
+      .card-content
+        p.video-container.card-map
+          iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.079045178507!2d-43.61376904933733!3d-19.322375986882985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa5f03b2e5dfc17%3A0xf6f40a8bcf067eca!2sRancho+Cip%C3%B3+Pousada!5e0!3m2!1sen!2sbr!4v1464062267007', width='400', height='450', frameborder='0', style='border:0', allowfullscreen='')            
+      .card-action(ng-click="$ctrl.openLink('http://ranchocipo.com.br/pousada')")
+        a(href="http://ranchocipo.com.br/pousada/" target="_blank") Site da pousada do Rancho Cipó.
+  br
+  br
+  .card
+    .card-content
+      h3.main-title Outras Sugestões de Pousada
+      span Há várias outras pousadas na região, bem próxima da pousada rancho cipó.
   
-  h3.main-title Outras Sugestões de Pousada
-  p.lead Há várias outras pousadas na região, bem próxima da pousada rancho cipó.
-  div.row
-    .col.s12
-        div.row
-          div.card-panel.z-depth-1.col.s12.m8.offset-m2.hoverable(ng-click="$ctrl.openLink('http://www.pousadaanauecipo.com.br')")
-            div.row.card-panel-row
-              div.col.s6
-                img.responsive-img(src="assets/images/logoanaue.png")
-              div.col.s6
-                span
-                  a(href="http://www.pousadaanauecipo.com.br/" target="_blank") Site da pousada Anaue Cipó
+  
 
-        div.row
-          div.card-panel.z-depth-1.col.s12.m8.offset-m2.hoverable(ng-click="$ctrl.openLink('http://www.pousadaanauecipo.com.br')")
-            div.row.card-panel-row
-              div.col.s6
-                img.black.responsive-img(src="assets/images/varandadaserra.png")
-              div.col.s6
-                span
-                  a(href="http://www.varandasdaserra.com.br/" target="_blank") Site da pousada Varanda da Serra
-                  
-        div.row
-          div.card-panel.z-depth-1.col.s12.m8.offset-m2.hoverable(ng-click="$ctrl.openLink('http://www.pousadaanauecipo.com.br')")
-            div.row.card-panel-row
-              div.col.s6
-                img.responsive-img(src="assets/images/chaodaserra.png")
-              div.col.s6
-                span
-                  a(href="http://chaodaserra.com.br/" target="_blank") Site da pousada Chão da Serra
+  div.card-panel.z-depth-1.col.s12.hoverable(ng-click="$ctrl.openLink('http://www.pousadaanauecipo.com.br')")
+    div.row.card-panel-row.valign-wrapper
+      div.col.s6
+        img.responsive-img(src="assets/images/logoanaue.png")
+      div.col.s6
+        span
+          a(href="http://www.pousadaanauecipo.com.br/" target="_blank") Site da pousada Anaue Cipó
 
-                  
-        div.row
-          div.card-panel.z-depth-1.col.s12.m8.offset-m2.hoverable(ng-click="$ctrl.openLink('http://www.pousadaanauecipo.com.br')")
-            div.row.card-panel-row
-              div.col.s6
-                img.img-responsive(src="assets/images/vilarejo.jpg")
-              div.col.s6
-                span
-                  a(href="http://www.vilarejodaserra.com.br/" target="_blank") Site da pousada Vilarejo da Serra
-        div.row
-          div.card-panel.z-depth-1.col.s12.m8.offset-m2.hoverable(ng-click="$ctrl.openLink('https://www.google.com.br/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#hotel_dates=2016-06-12,2016-06-13&q=pousada%20serra%20do%20cipo&rflfq=1&rlla=0&rllag=-19333274,-43627052,720&tbm=lcl&tbs=lf_hd:-1,lf_maxhp:-1,lf_maxhpitems:300-400-500-550,lf_maxhpcur:BRL,lf_msr:-1,ls:-1,lf:1,lf_ui:6&fll=-19.318601094573026,-43.60336949666748&fspn=0.02207216417337321,0.04441787273646014&fz=15&oll=-19.338565850000002,-43.6243551&ospn=0.0246206467648733,0.03450436162495407&oz=14&qop=1&rlfi=hd:;si:')")
-            div.row.card-panel-row
-              div.col.s12
-                span
-                  a(href="https://www.google.com.br/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#hotel_dates=2016-06-12,2016-06-13&q=pousada%20serra%20do%20cipo&rflfq=1&rlla=0&rllag=-19333274,-43627052,720&tbm=lcl&tbs=lf_hd:-1,lf_maxhp:-1,lf_maxhpitems:300-400-500-550,lf_maxhpcur:BRL,lf_msr:-1,ls:-1,lf:1,lf_ui:6&fll=-19.318601094573026,-43.60336949666748&fspn=0.02207216417337321,0.04441787273646014&fz=15&oll=-19.338565850000002,-43.6243551&ospn=0.0246206467648733,0.03450436162495407&oz=14&qop=1&rlfi=hd:;si:" target="_blank") Veja outras opções no Google
+
+  div.card-panel.z-depth-1.col.s12.hoverable(ng-click="$ctrl.openLink('http://www.pousadaanauecipo.com.br')")
+    div.row.card-panel-row.valign-wrapper
+      div.col.s6
+        img.black.responsive-img(src="assets/images/varandadaserra.png")
+      div.col.s6
+        span
+          a(href="http://www.varandasdaserra.com.br/" target="_blank") Site da pousada Varanda da Serra
+            
+
+  div.card-panel.z-depth-1.col.s12.hoverable(ng-click="$ctrl.openLink('http://www.pousadaanauecipo.com.br')")
+    div.row.card-panel-row.valign-wrapper
+      div.col.s6
+        img.responsive-img(src="assets/images/chaodaserra.png")
+      div.col.s6
+        span
+          a(href="http://chaodaserra.com.br/" target="_blank") Site da pousada Chão da Serra
+            
+
+  div.card-panel.z-depth-1.col.s12.hoverable(ng-click="$ctrl.openLink('https://www.google.com.br/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#hotel_dates=2016-06-12,2016-06-13&q=pousada%20serra%20do%20cipo&rflfq=1&rlla=0&rllag=-19333274,-43627052,720&tbm=lcl&tbs=lf_hd:-1,lf_maxhp:-1,lf_maxhpitems:300-400-500-550,lf_maxhpcur:BRL,lf_msr:-1,ls:-1,lf:1,lf_ui:6&fll=-19.318601094573026,-43.60336949666748&fspn=0.02207216417337321,0.04441787273646014&fz=15&oll=-19.338565850000002,-43.6243551&ospn=0.0246206467648733,0.03450436162495407&oz=14&qop=1&rlfi=hd:;si:')")
+    div.row.card-panel-row.valign-wrapper
+      div.col.s6
+        img.responsive-img(src="assets/images/google-logo.png")
+      div.col.s6
+        span
+          a(href="https://www.google.com.br/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#hotel_dates=2016-06-12,2016-06-13&q=pousada%20serra%20do%20cipo&rflfq=1&rlla=0&rllag=-19333274,-43627052,720&tbm=lcl&tbs=lf_hd:-1,lf_maxhp:-1,lf_maxhpitems:300-400-500-550,lf_maxhpcur:BRL,lf_msr:-1,ls:-1,lf:1,lf_ui:6&fll=-19.318601094573026,-43.60336949666748&fspn=0.02207216417337321,0.04441787273646014&fz=15&oll=-19.338565850000002,-43.6243551&ospn=0.0246206467648733,0.03450436162495407&oz=14&qop=1&rlfi=hd:;si:" target="_blank") Veja outras opções no Google
