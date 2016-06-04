@@ -1,4 +1,4 @@
-* text=auto
+* text=input
 
 # These files are text and should be normalized (Convert crlf => lf)
 *.php  text
@@ -30,6 +30,8 @@
 *.zip  binary
 *.7z   binary
 *.ttf  binary
+*.eot  binary
+*.woff  binary
 
 # Documents
 *.doc  diff=astextplain
