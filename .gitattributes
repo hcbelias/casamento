@@ -10,6 +10,7 @@
 *.txt  text
 *.ini  text
 *.inc  text
+*.jade text
 .htaccess text
 
 
