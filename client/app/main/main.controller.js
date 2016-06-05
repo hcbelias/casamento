@@ -6,6 +6,7 @@ class MainController {
 
   constructor($window) {
     this.window = $window;
+    this.contact = {};
   }
 
   $onInit() {

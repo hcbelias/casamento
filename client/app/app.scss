@@ -33,6 +33,7 @@ body {
 
   .main-container {
     top: -150px;
+    background-color: #EBE2D1;
     position: relative;
     min-height: 50px;
     font-size: 20px;
@@ -57,7 +58,8 @@ body {
     }
   }
   .border-container{
-
+    background-color: #EBE2D1;
+        padding-bottom: 55px;
       .middle-border{
         max-width: 490px;
         margin-left: auto;

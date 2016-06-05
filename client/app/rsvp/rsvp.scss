@@ -4,6 +4,14 @@ rsvp{
     max-width: 600px;
     margin: auto;
   }
+  .error-message{
+    color: red;
+    font-weight: 400;
+  }
+  .success-message{
+    color: green;
+    font-weight: 400;
+  }
   form{
     /* label focus color */
     .input-field input[type=text]:focus + label,
@@ -24,9 +32,11 @@ rsvp{
       color: #19245B;
     }
 
+
+
   }
 
-  a.my-btn{
+  .my-btn{
     float: right;
     background-color: #EBE2D1;
     color: #19245B;
@@ -35,6 +45,7 @@ rsvp{
       background-color: #DFB967;
     }
   }
+
   @media #{$medium-and-down} {
     .checkbox{
       float: right;
