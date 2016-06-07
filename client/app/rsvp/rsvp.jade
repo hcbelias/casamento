@@ -15,8 +15,8 @@ div.container#rsvp
           .error-message(ng-show="errorMessage") 
             | Ocorreu um erro ao realizar a sua confirmação de presença. 
             br
-            | Por favor, confirmar a presença pelo telefone: (31) 9204 2341 ou (31) 99204 2341
-          .success-message(ng-show="successMessage") Sua confirmação foi realizada com sucesso!                      
+            | Por favor, confirmar a presença pelo telefone: (31) 99204 2341
+          .success-message(ng-show="successMessage") {{successMessage}}
           form.col.s12(name="confirmationForm" ng-submit="$ctrl.submitEmail(contact);" ng-show="!successMessage && !errorMessage")
             p Todos os campos são obrigatório            
             .row            
