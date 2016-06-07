@@ -29,9 +29,6 @@
 *.gz   binary
 *.zip  binary
 *.7z   binary
-*.ttf  binary
-*.eot  binary
-*.woff  binary
 
 # Documents
 *.doc  diff=astextplain
