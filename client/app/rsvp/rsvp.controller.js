@@ -10,18 +10,18 @@
 
     constructor($scope, $http){
       this.scope = $scope;
-      this.http = $http
+      this.http = $http;
     }
 
     submitEmail(contact){
       var ctrlScope = this.scope;
       this.http.post('/api/sendmails', contact).
-        then(function(response) {
-          ctrlScope.successMessage = 'Sua presença foi confirmada!';
-        }, function(response) {
-          ctrlScope.errorMessage = 'Sua presença foi confirmada!'
+        then(function() {
+          debugger;
+          ctrlScope.successMessage = contact.attend ? 'Sua presença foi confirmada!' :  'Você não confirmou sua presença.' ;
+        }, function() {
+          ctrlScope.errorMessage = 'Ocorreu um erro ao confirmar sua presença. Favor entrar em contato pelo telefone: (31) 99204 2341';
       });
-
     }
 
   }
