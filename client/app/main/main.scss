@@ -2,6 +2,10 @@
 
 main{
   font-size: large;
+  .space-img{
+    margin: auto;
+    float: right;
+  }
 }
 
 @media #{$large-and-up} {

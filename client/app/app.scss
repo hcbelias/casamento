@@ -16,11 +16,19 @@ body {
     font-family: 'Open Sans', sans-serif;
     text-align : center;
     font-size: 25px;
-    padding-bottom: 160px;
+    padding-bottom: 120px;
+    padding-top: 100px;
+    .main-picture{
+      border: #4E4F6F 1px groove;
+      border-radius: 50%;
+      max-height: 150px;
+      display: block;
+      top: 50px;
+
+    }
     .header-title {
       font-family: 'Powerpoint', cursive;
       font-size  : 100px;
-      padding-top: 100px;
       height     : 110px;
       line-height: 60px;
       text-align : center;

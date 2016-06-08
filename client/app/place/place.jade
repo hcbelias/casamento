@@ -11,8 +11,14 @@ div.container#place
         img(src='assets/images/estrada.jpg').full-width
         span.card-title Pousada Rancho Cipó
       .card-content
-        p.video-container.card-map
-          iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.079045178507!2d-43.61376904933733!3d-19.322375986882985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa5f03b2e5dfc17%3A0xf6f40a8bcf067eca!2sRancho+Cip%C3%B3+Pousada!5e0!3m2!1sen!2sbr!4v1464062267007', width='400', height='450', frameborder='0', style='border:0', allowfullscreen='')            
+        .row
+          .col.s12.l8
+            p.video-container.card-map
+              iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.079045178507!2d-43.61376904933733!3d-19.322375986882985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa5f03b2e5dfc17%3A0xf6f40a8bcf067eca!2sRancho+Cip%C3%B3+Pousada!5e0!3m2!1sen!2sbr!4v1464062267007', width='400', height='450', frameborder='0', style='border:0', allowfullscreen='')            
+          .col.s12.l4
+            div.right
+              img.responsive-img(src="assets/images/serracipo.jpg")
+          
       .card-action(ng-click="$ctrl.openLink('http://ranchocipo.com.br/pousada')")
         a(href="http://ranchocipo.com.br/pousada/" target="_blank") Site da pousada do Rancho Cipó.
   br
