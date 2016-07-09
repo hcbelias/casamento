@@ -17,54 +17,7 @@ div.container#place
               iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.079045178507!2d-43.61376904933733!3d-19.322375986882985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa5f03b2e5dfc17%3A0xf6f40a8bcf067eca!2sRancho+Cip%C3%B3+Pousada!5e0!3m2!1sen!2sbr!4v1464062267007', width='400', height='450', frameborder='0', style='border:0', allowfullscreen='')            
           .col.s12.l4
             div.right
-              img.responsive-img(src="assets/images/serracipo.jpg")
-        .row
-          table.responsive-table
-            thead Estes preços são promocionais para o casamento, quaisquer dúvidas nos contate.
-             tr
-              th Tipo de Quarto
-              th # de pessoas
-              th Valor(pacote sexta a domingo ou sabado a segunda)
-            tbody            
-              tr
-                td Suite tipo 2
-                td Casal + 2 pessoas
-                td 490,00
-              tr
-                td Suite tipo 3
-                td Casal 
-                td 550,00
-              tr
-                td Suite tipo 4 
-                td Casal 
-                td 440,00  
-              tr  
-                td Suite tipo 5
-                td Casal + 2 pessoas
-                td 550,00
-              tr
-                td Bangalo
-                td Casal + 2 pessoas
-                td 650,00
-              tr
-                td Bangalo Prata c/ Hidro
-                td Casal + 2 pessoas
-                td 1100,00
-              tr  
-                td Bangalo Luxo c/ Hidro
-                td Casal
-                td 1100,00
-              tr  
-                td Casa Amarela
-                td Até 6 pessoas, mínimo de 4
-                td 100 Reais por dia/pessoa
-              tr  
-                td Casa Azul
-                td Até 8 pessoas, mínimo de 6
-                td 100 Reais por dia/pessoa
-              tr  
-                td * É possível colocar uma colchão extra, o preço por colchão à parte é 100 reais por pessoa/dia
-      .card-action(ng-click="$ctrl.openLink('http://ranchocipo.com.br/pousada')")
+              img.responsive-img(src="assets/images/serracipo.jpg")    
         a(href="http://ranchocipo.com.br/pousada/" target="_blank") Site da pousada do Rancho Cipó.
   br
   br
@@ -72,7 +25,14 @@ div.container#place
     .card-content
       h3.main-title.second-title Outras Sugestões de Pousada
       span Há várias outras pousadas na região, bem próxima da pousada rancho cipó.
-  
+
+  div.card-panel.z-depth-1.col.s12.hoverable(ng-click="$ctrl.openLink('http://www.pousadaaconchegoserracipo.com.br')").spaced
+    div.row.card-panel-row.valign-wrapper
+      div.col.s4
+        span
+      div.col.s8
+        span
+          a(href="http://www.pousadaaconchegoserracipo.com.br/" target="_blank") Site da pousada Aconchego da Serra - Recomendamos!
   
 
   div.card-panel.z-depth-1.col.s12.hoverable(ng-click="$ctrl.openLink('http://www.pousadaanauecipo.com.br')")
